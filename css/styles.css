@@ -54,6 +54,13 @@ body, html {
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* Sidebar link hover effect */
+.sidebar .nav-links a:hover {
+  color: #6ca0dc;         /* light blue on hover */
+  text-decoration: underline;
 }
 
 /* Main content adjustments */
@@ -103,12 +110,14 @@ footer {
   margin-bottom: 20px;
 }
 
+/* Buttons */
 .buttons .btn {
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   margin-right: 10px;
   font-weight: 500;
+  transition: 0.2s ease;
 }
 
 .primary-btn {
@@ -119,6 +128,12 @@ footer {
 .secondary-btn {
   background: #e0e6ed;
   color: #333;
+}
+
+/* Button hover effect */
+.btn:hover {
+  opacity: 0.9;                /* slight fade */
+  transform: translateY(-2px); /* subtle lift */
 }
 
 /* Skills grid */
