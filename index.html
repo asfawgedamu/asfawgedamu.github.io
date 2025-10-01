@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Asfaw Gedamu | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -11,9 +13,10 @@
 
   <div class="container">
     <!-- Sidebar Navigation -->
-    <nav class="sidebar">
+    <nav class="sidebar" aria-label="Primary">
       <div class="profile">
         <img src="images/profile.jpg" alt="Asfaw Gedamu">
+        <h2>Asfaw Gedamu</h2>
         <p>Instructional Designer | AI/ML Enthusiast</p>
       </div>
       <ul class="nav-links">
@@ -31,10 +34,10 @@
     <!-- Main Content -->
     <main>
       <!-- Hero Section -->
-      <section id="hero">
+      <section id="hero" class="section-box">
         <div class="hero-content">
-          <h1>Hi, I'm Asfaw Gedamu</h1>
-          <p>Transforming knowledge into impact through AI, ML, and technical training</p>
+          <h1 id="hero-title" aria-live="polite"></h1>
+          <p class="hero-sub">Transforming knowledge into impact through AI, ML, and technical training</p>
           <div class="buttons">
             <a href="#contact" class="btn primary-btn">Contact Me</a>
             <a href="#about" class="btn secondary-btn">Read More</a>
@@ -45,7 +48,7 @@
       <!-- About Section -->
       <section id="about" class="section-box">
         <h2>About Me</h2>
-        <p>With over 17 years of experience in telecommunications and IT, I specialize in instructional design, AI/ML applications, and enabling organizational transformation through practical learning solutions.</p>
+        <p>With over 17 years of experience in telecommunications and IT, I design solutions that help people learn, grow, and adapt. I combine instructional design with applied AI to make learning both delightful and productive.</p>
       </section>
 
       <!-- Experience Section -->
@@ -56,8 +59,8 @@
           <span>IS Offers Program Expert & Talent Development Specialist</span>
           <ul>
             <li>Delivered AI & ML programs to over 100 employees</li>
-            <li>Designed internal trainings for telecom excellence</li>
-            <li>Developed analytics-driven training dashboards</li>
+            <li>Designed internal trainings and performance dashboards</li>
+            <li>Led database & migration initiatives</li>
           </ul>
         </div>
         <div class="card">
@@ -65,7 +68,7 @@
           <span>Social Media & Localization Lead</span>
           <ul>
             <li>Built social media strategy for low-resource languages</li>
-            <li>Boosted engagement & follower growth organically</li>
+            <li>Increased engagement through content & localization</li>
           </ul>
         </div>
       </section>
@@ -120,12 +123,12 @@
       <!-- Tools & Frameworks Section -->
       <section id="tools" class="section-box">
         <h2>Tools & Frameworks</h2>
-        <div class="tools-icons">
-          <i class="fab fa-github fa-2x"></i>
-          <i class="fab fa-docker fa-2x"></i>
-          <i class="fab fa-linux fa-2x"></i>
-          <i class="fas fa-database fa-2x"></i>
-          <i class="fab fa-python fa-2x"></i>
+        <div class="tools-icons" aria-hidden="true">
+          <i class="fab fa-github fa-2x" title="GitHub"></i>
+          <i class="fab fa-docker fa-2x" title="Docker"></i>
+          <i class="fab fa-linux fa-2x" title="Linux"></i>
+          <i class="fas fa-database fa-2x" title="Databases"></i>
+          <i class="fab fa-python fa-2x" title="Python"></i>
         </div>
       </section>
 
@@ -134,7 +137,7 @@
         <h2>Projects</h2>
         <div class="card">
           <h3>Oracle → PostgreSQL Migration Guide</h3>
-          <p>Step-by-step enterprise migration guide.</p>
+          <p>Step-by-step enterprise migration guide with scripts and checklists.</p>
           <a href="https://github.com/asfawgedamu/Oracle-to-Postgres" class="btn link-btn">View Code</a>
         </div>
         <div class="card">
@@ -148,20 +151,17 @@
       <section id="contact" class="section-box">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:asfawgedamu@gmail.com">asfawgedamu@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/asfawgedamu">asfawgedamu</a></p>
+        <p>GitHub: <a href="https://github.com/asfawgedamu">github.com/asfawgedamu</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/asfawgedamu">linkedin.com/in/asfawgedamu</a></p>
       </section>
     </main>
   </div>
 
-
-  <script src="js/script.js"></script>
-
-</body>
-
   <!-- Footer -->
   <footer>
     <p>© 2025 Asfaw Gedamu — Built with ❤️ using GitHub Pages</p>
   </footer>
-  
+
+  <script src="js/script.js"></script>
+</body>
 </html>
