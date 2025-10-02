@@ -1,165 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asfaw Gedamu | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-  <div class="container">
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar" aria-label="Primary">
-      <div class="profile">
-        <img src="images/profile.jpg" alt="Asfaw Gedamu">
-        <h2>Asfaw Gedamu</h2>
-        <p>Instructional Designer | AI/ML Enthusiast</p>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="images/profile.jpg" alt="Asfaw Gedamu">
+      <h1>Asfaw Gedamu</h1>
+      <p>Tech Learning Strategist</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/asfawgedamu" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/asfawgedamu" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </aside>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section -->
-      <section id="hero" class="section-box">
-        <div class="hero-content">
-          <h1 id="hero-title" aria-live="polite"></h1>
-          <p class="hero-sub">Transforming knowledge into impact through AI, ML, and technical training</p>
-          <div class="buttons">
-            <a href="#contact" class="btn primary-btn">Contact Me</a>
-            <a href="#about" class="btn secondary-btn">Read More</a>
-          </div>
-        </div>
-      </section>
+  <main>
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>Tech Learning Strategist @ Ethio Telecom | IS Curriculum Designer | Driving Digital & Talent Transformation | Advocate for Mastering Through Sharing</p>
+      <button onclick="scrollToSection('contact')">Contact Me</button>
+    </section>
 
-      <!-- About Section -->
-      <section id="about" class="section-box">
-        <h2>About Me</h2>
-        <p>With over 17 years of experience in telecommunications and IT, I design solutions that help people learn, grow, and adapt. I combine instructional design with applied AI to make learning both delightful and productive.</p>
-      </section>
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <p>Over 17 years in telecommunications, IT, training, and digital transformation.</p>
+      <button onclick="toggleReadMore(this)">Read More</button>
+      <div class="more-text hidden">
+        <p>Deep expertise in AI, data engineering, and talent development. Led multiple organizational transformations and large-scale training programs.</p>
+      </div>
+    </section>
 
-      <!-- Experience Section -->
-      <section id="experience" class="section-box">
-        <h2>Experience</h2>
-        <div class="card">
-          <h3>Ethio Telecom – TExA</h3>
-          <span>IS Offers Program Expert & Talent Development Specialist</span>
-          <ul>
-            <li>Delivered AI & ML programs to over 100 employees</li>
-            <li>Designed internal trainings and performance dashboards</li>
-            <li>Led database & migration initiatives</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Lesan.ai</h3>
-          <span>Social Media & Localization Lead</span>
-          <ul>
-            <li>Built social media strategy for low-resource languages</li>
-            <li>Increased engagement through content & localization</li>
-          </ul>
-        </div>
-      </section>
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <p>MSc in NLP/ML, multiple certifications in AI and cloud.</p>
+    </section>
 
-      <!-- Education Section -->
-      <section id="education" class="section-box">
-        <h2>Education</h2>
-        <div class="card">
-          <h3>MSc – NLP & Machine Learning</h3>
-          <p>Focus: AI/ML and Natural Language Processing</p>
-        </div>
-        <div class="card">
-          <h3>Certifications</h3>
-          <ul>
-            <li>Deep Learning Specialization – Coursera</li>
-            <li>Machine Learning Specialization – Coursera</li>
-          </ul>
-        </div>
-      </section>
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>SQL, Python, PySpark</li>
+        <li>Azure Data Factory, Databricks</li>
+        <li>Machine Learning, NLP</li>
+        <li>Linux, RHEL, Oracle DB</li>
+      </ul>
+    </section>
 
-      <!-- Skills Section -->
-      <section id="skills" class="section-box">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Technical</h3>
-            <ul>
-              <li>SQL, Python, PySpark</li>
-              <li>Oracle & PostgreSQL</li>
-              <li>Azure, AWS, Databricks</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>AI & ML</h3>
-            <ul>
-              <li>Natural Language Processing</li>
-              <li>Prompt Engineering</li>
-              <li>Deep Learning & ML Models</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Instructional Design</h3>
-            <ul>
-              <li>Training Programs</li>
-              <li>Curriculum Design</li>
-              <li>Talent Enablement</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <img src="images/project1.png" alt="Project 1">
+      <img src="images/project2.png" alt="Project 2">
+    </section>
 
-      <!-- Tools & Frameworks Section -->
-      <section id="tools" class="section-box">
-        <h2>Tools & Frameworks</h2>
-        <div class="tools-icons" aria-hidden="true">
-          <i class="fab fa-github fa-2x" title="GitHub"></i>
-          <i class="fab fa-docker fa-2x" title="Docker"></i>
-          <i class="fab fa-linux fa-2x" title="Linux"></i>
-          <i class="fas fa-database fa-2x" title="Databases"></i>
-          <i class="fab fa-python fa-2x" title="Python"></i>
-        </div>
-      </section>
+    <section id="contact" class="card">
+      <h2>Contact Me</h2>
+      <form action="mailto:asfaw.gedamu@example.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
-      <!-- Projects Section -->
-      <section id="projects" class="section-box">
-        <h2>Projects</h2>
-        <div class="card">
-          <h3>Oracle → PostgreSQL Migration Guide</h3>
-          <p>Step-by-step enterprise migration guide with scripts and checklists.</p>
-          <a href="https://github.com/asfawgedamu/Oracle-to-Postgres" class="btn link-btn">View Code</a>
-        </div>
-        <div class="card">
-          <h3>ENABLΞD Framework</h3>
-          <p>Signature framework to shift professionals from Executors to Enablers.</p>
-          <a href="https://github.com/asfawgedamu/ENABLED" class="btn link-btn">Learn More</a>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="section-box">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:asfawgedamu@gmail.com">asfawgedamu@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/asfawgedamu">github.com/asfawgedamu</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/asfawgedamu">linkedin.com/in/asfawgedamu</a></p>
-      </section>
-    </main>
-  </div>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Asfaw Gedamu — Built with ❤️ using GitHub Pages</p>
+    <p>© 2025 Asfaw Gedamu. All rights reserved.</p>
   </footer>
 
   <script src="js/script.js"></script>
