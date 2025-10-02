@@ -1,10 +1,18 @@
 :root {
-    --sidebar-bg: #2f3e46; /* keep current dark color */
-    --accent: #6ca0dc;
-    --muted: #f4f6f8;
+    --sidebar-bg: #4b7e9a98; /* keep current dark color */
+    --accent: #287acc8e; /* contact me */
+    --muted: #F5F5F5; /* light background */
     --card-bg: #ffffff;
+    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+    --border-radius: 12px;
     --text: #1f2d33;
 }
+
+
+
+
 
 * {
     box-sizing: border-box;
@@ -26,7 +34,7 @@ body {
 .sidebar {
     width: 260px;
     background: var(--sidebar-bg);
-    color: #fff;
+    color: hwb(0 100% 0% / 0.167);
     padding: 26px 18px;
     position: fixed;
     top: 0;
@@ -97,7 +105,7 @@ body {
 
 /* hover + active styling with background highlight */
 .nav a:hover {
-    background: rgba(108, 160, 220, 0.12);
+    background: #287acc8e;
     color: #fff;
     transform: translateX(6px);
 }
@@ -107,6 +115,9 @@ body {
     color: #fff;
     box-shadow: inset 0 0 0 2px rgba(108, 160, 220, 0.02);
 }
+
+
+
 
 /* social compact */
 .social-compact {
