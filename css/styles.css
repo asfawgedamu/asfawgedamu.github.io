@@ -101,6 +101,49 @@ body {
     font-weight: 600;
 }
 
+/* Sidebar navigation - targeting the actual classes in your HTML */
+.hide-on-small-only .side-nav {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0;
+}
+
+.hide-on-small-only .side-nav li {
+    margin: 10px 0;
+}
+
+.hide-on-small-only .side-nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background .22s, transform .18s;
+}
+
+.hide-on-small-only .side-nav a i {
+    width: 22px;
+    text-align: center;
+    opacity: 0.95;
+}
+
+.hide-on-small-only .side-nav a span {
+    font-weight: 600;
+}
+
+.hide-on-small-only .side-nav a:hover {
+    background: #287acc8e;
+    color: #fff;
+    transform: translateX(6px);
+}
+
+.hide-on-small-only .side-nav a.active {
+    background: rgba(108, 160, 220, 0.16);
+    color: #fff;
+    box-shadow: inset 0 0 0 2px rgba(108, 160, 220, 0.02);
+}
 /* hover + active styling with background highlight */
 .nav a:hover {
     background: #287acc8e;
