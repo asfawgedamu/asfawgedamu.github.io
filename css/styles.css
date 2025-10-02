@@ -12,8 +12,6 @@
 
 
 
-
-
 * {
     box-sizing: border-box;
 }
@@ -115,8 +113,6 @@ body {
     color: #fff;
     box-shadow: inset 0 0 0 2px rgba(108, 160, 220, 0.02);
 }
-
-
 
 
 /* social compact */
@@ -337,5 +333,36 @@ body {
 
     #hero-title {
         font-size: 1.5rem;
+    }
+}
+
+
+
+/* Print styles */
+@media print {
+    body, .main-content, .site-wrap {
+        background: #fff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+    }
+    .sidebar,
+    .site-footer,
+    .hero-actions,
+    .social-compact {
+        display: none !important;
+    }
+    .main-content {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+    .card, .section, .projects-grid, .project img {
+        box-shadow: none !important;
+        background: #fff !important;
+        border-radius: 0 !important;
+    }
+    a {
+        color: #000 !important;
+        text-decoration: underline !important;
     }
 }
