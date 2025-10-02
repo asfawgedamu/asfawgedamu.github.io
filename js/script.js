@@ -12,7 +12,7 @@ document.querySelectorAll('.nav a').forEach(a=>{
 
 // Typewriter hero
 const heroEl = document.getElementById('hero-title');
-const heroText = "Hi, I'm Asfaw Gedamu — Enabling Digital & Talent Transformation";
+const heroText = "Hi, I'm Asfaw Gedamu — Tech Training Strategist";
 let i=0;
 function type(){
   if(!heroEl) return;
