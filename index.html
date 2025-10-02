@@ -1,40 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Asfaw Gedamu – Tech Learning Strategist Portfolio</title>
   <meta name="description" content="Portfolio of Asfaw Gedamu, Tech Learning Strategist, specializing in Data Engineering, Machine Learning, and Telecom Systems.">
-  
   <!-- Open Graph -->
   <meta property="og:title" content="Asfaw Gedamu – Tech Learning Strategist Portfolio">
   <meta property="og:description" content="Portfolio of Asfaw Gedamu, Tech Learning Strategist, specializing in Data Engineering, Machine Learning, and Telecom Systems.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/profile.jpg">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
 <body>
   <div class="site-wrap">
     <aside class="sidebar" aria-label="Main navigation">
       <div class="profile">
-        <img src="https://via.placeholder.com/150" alt="Asfaw Gedamu" loading="lazy">
-        <div>
-          <h2>Asfaw Gedamu</h2>
-          <p>Tech Learning Strategist</p>
-        </div>
+        <img src="images/profile.jpg" alt="Asfaw Gedamu" loading="lazy">
+        <h2>Asfaw Gedamu</h2>
+        <p>Tech Learning Strategist</p>
       </div>
 
       <!-- Sidebar navigation -->
+
       <nav class="nav" aria-label="Sidebar links">
         <ul>
-          <li><a href="#about" class="active"><i class="fa-solid fa-user"></i><span>About</span></a></li>
+          <li><a href="#about"><i class="fa-solid fa-user"></i><span>About</span></a></li>
           <li><a href="#experience"><i class="fa-solid fa-briefcase"></i><span>Experience</span></a></li>
           <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a></li>
           <li><a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a></li>
@@ -42,20 +36,21 @@
           <li><a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
         </ul>
       </nav>
+<!-- commented out for cleaner look
+      <div class="social-compact">
+        <a href="https://linkedin.com/in/asfawgedamu" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/asfawgedamu" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>   -->
     </aside>
 
     <main class="main-content">
       <header id="hero" class="hero section">
         <div class="hero-inner">
-          <h1 id="hero-title">Asfaw Gedamu</h1>
+          <h1 id="hero-title" aria-live="polite"></h1>
           <p class="sub">Transforming knowledge into impact through AI, ML, and technical training</p>
           <div class="hero-actions">
-            <a class="hero-icon" href="https://linkedin.com/in/asfawgedamu" target="_blank" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a class="hero-icon" href="https://github.com/asfawgedamu" target="_blank" aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
+            <a class="hero-icon" href="https://linkedin.com/in/asfawgedamu" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="hero-icon" href="https://github.com/asfawgedamu" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             <a class="btn btn-primary" href="#contact">Contact Me</a>
             <a class="btn btn-outline" href="#about">Read More</a>
           </div>
@@ -65,115 +60,64 @@
       <section id="about" class="section card">
         <h2>About Me</h2>
         <p>With 18 years of experience in telecommunications and IT, I design solutions that help people learn, grow, and adapt. I combine instructional design with applied AI to make learning both delightful and productive.</p>
-        <p>My approach bridges the gap between technical expertise and human-centered design, creating learning experiences that are engaging, effective, and scalable.</p>
       </section>
 
       <section id="experience" class="section card">
         <h2>Experience</h2>
         <div class="timeline">
-          <div class="item">
-            <h3>Ethio Telecom – TExA</h3>
-            <p>IS Offers Program Expert & Talent Development Specialist</p>
-            <p class="date">2018 - Present</p>
-          </div>
-          <div class="item">
-            <h3>Lesan.ai</h3>
-            <p>Social Media & Localization Lead</p>
-            <p class="date">2021 - 2022</p>
-          </div>
-          <div class="item">
-            <h3>Freelance Consultant</h3>
-            <p>Tech Learning & AI Solutions</p>
-            <p class="date">2015 - 2018</p>
-          </div>
+          <div class="item"><h3>Ethio Telecom – TExA</h3><p>IS Offers Program Expert & Talent Development Specialist</p></div>
+          <div class="item"><h3>Lesan.ai</h3><p>Social Media & Localization Lead</p></div>
         </div>
       </section>
 
-      <section id="projects" class="section card">
+      <section id="projects" class="section card reveal">
         <h2>Projects</h2>
         <div class="projects-grid">
           <article class="project">
-            <img src="https://via.placeholder.com/400x200" alt="Oracle to PostgreSQL Migration Guide" loading="lazy">
-            <div class="project-content">
-              <h3>Oracle → PostgreSQL Migration Guide</h3>
-              <p>Step-by-step enterprise migration guide with scripts and checklists for seamless database transitions.</p>
-              <p><a href="https://github.com/asfawgedamu/Oracle-to-Postgres" target="_blank">View Code <i class="fa-solid fa-arrow-right"></i></a></p>
-            </div>
+            <img src="images/project1.png" alt="Project 1" loading="lazy">
+            <h3>Oracle → PostgreSQL Migration Guide</h3>
+            <p>Step-by-step enterprise migration guide with scripts and checklists.</p>
+            <p><a href="https://github.com/asfawgedamu/Oracle-to-Postgres" target="_blank">View Code</a></p>
           </article>
           <article class="project">
-            <img src="https://via.placeholder.com/400x200" alt="ENABLΞD Framework" loading="lazy">
-            <div class="project-content">
-              <h3>ENABLΞD Framework</h3>
-              <p>Signature framework to shift professionals from Executors to Enablers through strategic skill development.</p>
-              <p><a href="https://github.com/asfawgedamu/ENABLED" target="_blank">Learn More <i class="fa-solid fa-arrow-right"></i></a></p>
-            </div>
-          </article>
-          <article class="project">
-            <img src="https://via.placeholder.com/400x200" alt="AI Learning Platform" loading="lazy">
-            <div class="project-content">
-              <h3>AI-Powered Learning Platform</h3>
-              <p>Customizable learning platform with adaptive content delivery and progress tracking.</p>
-              <p><a href="#" target="_blank">View Details <i class="fa-solid fa-arrow-right"></i></a></p>
-            </div>
+            <img src="images/project2.png" alt="Project 2" loading="lazy">
+            <h3>ENABLΞD Framework</h3>
+            <p>Signature framework to shift professionals from Executors to Enablers.</p>
+            <p><a href="https://github.com/asfawgedamu/ENABLED" target="_blank">Learn More</a></p>
           </article>
         </div>
       </section>
 
       <section id="skills" class="section card">
         <h2>Skills</h2>
-        <div class="skill" data-value="90">
-          <span>SQL & Database Management</span>
-          <div class="bar"><div class="fill"></div></div>
-        </div>
-        <div class="skill" data-value="92">
-          <span>Python & Data Engineering</span>
-          <div class="bar"><div class="fill"></div></div>
-        </div>
-        <div class="skill" data-value="85">
-          <span>Machine Learning & NLP</span>
-          <div class="bar"><div class="fill"></div></div>
-        </div>
-        <div class="skill" data-value="80">
-          <span>Cloud Platforms (Azure/AWS)</span>
-          <div class="bar"><div class="fill"></div></div>
-        </div>
-        <div class="skill" data-value="88">
-          <span>Instructional Design</span>
-          <div class="bar"><div class="fill"></div></div>
-        </div>
+        <div class="skill" data-value="90"><span>SQL</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-value="92"><span>Python</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-value="85"><span>ML & NLP</span><div class="bar"><div class="fill"></div></div></div>
+        <div class="skill" data-value="80"><span>Cloud (Azure/AWS)</span><div class="bar"><div class="fill"></div></div></div>
       </section>
 
       <section id="education" class="section card">
         <h2>Education</h2>
-        <div class="education-item">
-          <h3>MSc – NLP & Machine Learning</h3>
-          <p>Addis Ababa University | 2020 - 2022</p>
-          <p>Specialized in natural language processing applications for Ethiopian languages.</p>
-        </div>
-        <div class="education-item">
-          <h3>BSc – Information Technology</h3>
-          <p>Addis Ababa University | 2002 - 2006</p>
-          <p>Focus on software engineering and database systems.</p>
-        </div>
+        <p>MSc – NLP & Machine Learning</p>
       </section>
 
       <section id="contact" class="section card">
         <h2>Contact</h2>
         <ul class="contact-list">
-          <li><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="https://api.whatsapp.com/send?phone=251911510063">Let's Chat</a></li>
-          <li><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:asfawg@gmail.com">asfawg@gmail.com</a></li>
-          <li><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/asfawgedamu">View my GitHub</a></li>
-          <li><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/asfawgedamu">Let's Connect</a></li>
+          <li>WhatsApp: <a href="https://api.whatsapp.com/send?phone=251911510063"> Let’s Chat</a></li>
+          <li>Email: <a href="mailto:asfawg@gmail.com">Email me</a></li>
+          <li>GitHub: <a href="https://github.com/asfawgedamu">View my GitHub</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/asfawgedamu">Let’s Connect</a></li>
         </ul>
       </section>
 
+
       <footer class="site-footer">
-        <p>© 2025 Asfaw Gedamu. All rights reserved.</p>
+        <p>© 2025 Asfaw Gedamu</p>
       </footer>
     </main>
   </div>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

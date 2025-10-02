@@ -1,118 +1,65 @@
-// Portfolio JavaScript functionality
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Initialize the portfolio functionality
-  initPortfolio();
+// Smooth scroll for links
+document.querySelectorAll('.nav a').forEach(a=>{
+  a.addEventListener('click', e=>{
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    // set active class
+    document.querySelectorAll('.nav a').forEach(x=>x.classList.remove('active'));
+    a.classList.add('active');
+  });
 });
 
-function initPortfolio() {
-  // Animate skill bars on scroll
-  animateSkillBars();
-  
-  // Set up smooth scrolling for navigation links
-  setupSmoothScrolling();
-  
-  // Update active nav link on scroll
-  setupActiveNavHighlighting();
+// Typewriter hero
+const heroEl = document.getElementById('hero-title');
+const heroText = "Hi, I'm Asfaw Gedamu — Enabling Digital & Talent Transformation";
+let i=0;
+function type(){
+  if(!heroEl) return;
+  if(i<heroText.length){ heroEl.textContent += heroText.charAt(i); i++; setTimeout(type,28); }
 }
+window.addEventListener('load', ()=>{ type(); initAnimations(); updateActiveOnScroll(); });
 
-// Animate skill bars when they come into view
-function animateSkillBars() {
-  const skills = document.querySelectorAll('.skill');
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const skill = entry.target;
-        const value = skill.getAttribute('data-value');
-        const fill = skill.querySelector('.fill');
-        
-        // Animate the skill bar after a short delay
-        setTimeout(() => {
-          fill.style.width = value + '%';
-        }, 200);
-        
-        // Stop observing once animated
-        observer.unobserve(skill);
+// IntersectionObserver for reveal and skill bars
+function initAnimations(){
+  const sections = document.querySelectorAll('main .section');
+  const io = new IntersectionObserver((entries, obs)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('fade-in');
+        entry.target.classList.remove('hidden');
+        // animate skill bars if section is skills
+        if(entry.target.id==='skills'){
+          document.querySelectorAll('.skill').forEach(s=>{
+            const val = s.getAttribute('data-value');
+            const fill = s.querySelector('.fill');
+            fill.style.width = val + '%';
+          });
+        }
+        // reveal projects with small delay
+        if(entry.target.id==='projects'){
+          entry.target.querySelectorAll('.project').forEach((p, idx)=>{
+            setTimeout(()=>p.classList.add('fade-in'), idx*160);
+          });
+        }
+        obs.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });
-  
-  // Observe each skill element
-  skills.forEach(skill => {
-    observer.observe(skill);
+  }, {threshold:0.18});
+  sections.forEach(s=>{ s.classList.add('hidden'); io.observe(s); });
+}
+
+// Update active nav based on scroll
+function updateActiveOnScroll(){
+  const navLinks = Array.from(document.querySelectorAll('.nav a'));
+  const sections = navLinks.map(l=>document.querySelector(l.getAttribute('href')));
+  window.addEventListener('scroll', ()=>{
+    let currentIdx = -1;
+    sections.forEach((sec, idx)=>{
+      if(!sec) return;
+      const rect = sec.getBoundingClientRect();
+      if(rect.top <= 120) currentIdx = idx;
+    });
+    navLinks.forEach((link, idx)=> link.classList.toggle('active', idx===currentIdx));
   });
-}
-
-// Set up smooth scrolling for navigation links
-function setupSmoothScrolling() {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-      
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        // Calculate offset for fixed sidebar
-        const offset = window.innerWidth > 992 ? 0 : 20;
-        
-        window.scrollTo({
-          top: targetElement.offsetTop - offset,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-}
-
-// Update active navigation link based on scroll position
-function setupActiveNavHighlighting() {
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('.nav a');
-  
-  window.addEventListener('scroll', function() {
-    let current = '';
-    
-    // Determine which section is currently in view
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      
-      // Adjust threshold based on screen size
-      const threshold = window.innerWidth > 992 ? 100 : 50;
-      
-      if (scrollY >= (sectionTop - threshold)) {
-        current = section.getAttribute('id');
-      }
-    });
-    
-    // Update active state of navigation links
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
-        link.classList.add('active');
-      }
-    });
-  });
-}
-
-// Additional utility functions can be added here
-
-// Function to handle form submissions (if contact form added later)
-function handleFormSubmission(formId) {
-  const form = document.getElementById(formId);
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      // Form submission logic would go here
-      console.log('Form submitted');
-    });
-  }
-}
-
-// Function to initialize any interactive elements
-function initInteractiveElements() {
-  // Add any additional interactive element initialization here
 }
