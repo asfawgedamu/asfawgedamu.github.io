@@ -55,13 +55,14 @@ body {
 /* White underline just below the profile image */
 .profile-underline {
     position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px; /* Slightly narrower than image for balance */
-    height: 3px;
+    bottom: -20px;
+    left: 0%;
+    width: 100px; /* Slightly narrower than image for balance */
+    height: 2px;
     background-color: white;
     border-radius: 2px;
+    transform: translateX(0%);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 /* nav */
