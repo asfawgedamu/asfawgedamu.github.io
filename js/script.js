@@ -22,8 +22,7 @@ document.querySelectorAll('.nav a').forEach(a => {
 
 // Typewriter hero
 const heroEl = document.getElementById('hero-title');
-const heroTextOne = "Hi, I'm Asfaw Gedamu ";
-const heroTextTwo = "Tech Learning Strategist";
+const heroText = "Hi, I'm Asfaw Gedamu — Tech Learning Strategist";
 let i = 0;
 function type() {
   if (!heroEl) return;

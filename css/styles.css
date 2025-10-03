@@ -58,8 +58,8 @@ body {
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90px; /* Slightly narrower than image for balance */
-    height: 8px;
+    width: 80px; /* Slightly narrower than image for balance */
+    height: 3px;
     background-color: white;
     border-radius: 2px;
 }
@@ -98,19 +98,19 @@ body {
 
 /* Style for Download Resume link (last item in nav) */
 .nav ul li:last-child a {
-    color: #4CAF50;
+    color: #fff;
     font-weight: bold;
 }
 
 .nav ul li:last-child a:hover {
     color: #fff;
-    background: rgba(76, 175, 80, 0.15);
+    background: rgba(25, 35, 179, 0.836);
     transform: translateX(6px);
 }
 
 /* hover + active styling with background highlight */
 .nav a:hover {
-    background: rgba(108, 160, 220, 0.12);
+    background: rgba(25, 35, 179, 0.836);
     color: #fff;
     transform: translateX(6px);
 }
