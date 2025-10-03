@@ -86,3 +86,14 @@ function updateActiveOnScroll() {
     );
   });
 }
+
+// Animate underline on load
+window.addEventListener('load', () => {
+  const profile = document.querySelector('.profile');
+  if (profile) {
+    setTimeout(() => {
+      profile.classList.add('loaded');
+    }, 300);
+  }
+});
+
