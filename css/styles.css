@@ -58,8 +58,8 @@ body {
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px; /* Slightly narrower than image for balance */
-    height: 3px;
+    width: 90px; /* Slightly narrower than image for balance */
+    height: 8px;
     background-color: white;
     border-radius: 2px;
 }
