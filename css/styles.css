@@ -1,16 +1,10 @@
 :root {
-    --sidebar-bg: #4b7e9a98; /* keep current dark color */
-    --accent: #287acc8e; /* contact me */
-    --muted: #F5F5F5; /* light background */
+    --sidebar-bg: #2f3e46; /* keep current dark color */
+    --accent: #6ca0dc;
+    --muted: #f4f6f8;
     --card-bg: #ffffff;
-    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-    --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
-    --transition: all 0.3s ease;
-    --border-radius: 12px;
     --text: #1f2d33;
 }
-
-
 
 * {
     box-sizing: border-box;
@@ -32,7 +26,7 @@ body {
 .sidebar {
     width: 260px;
     background: var(--sidebar-bg);
-    color: hwb(0 100% 0% / 0.167);
+    color: #fff;
     padding: 26px 18px;
     position: fixed;
     top: 0;
@@ -101,52 +95,9 @@ body {
     font-weight: 600;
 }
 
-/* Sidebar navigation - targeting the actual classes in your HTML */
-.hide-on-small-only .side-nav {
-    list-style: none;
-    padding: 0;
-    margin: 18px 0;
-}
-
-.hide-on-small-only .side-nav li {
-    margin: 10px 0;
-}
-
-.hide-on-small-only .side-nav a {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: rgba(255, 255, 255, 0.95);
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 8px;
-    transition: background .22s, transform .18s;
-}
-
-.hide-on-small-only .side-nav a i {
-    width: 22px;
-    text-align: center;
-    opacity: 0.95;
-}
-
-.hide-on-small-only .side-nav a span {
-    font-weight: 600;
-}
-
-.hide-on-small-only .side-nav a:hover {
-    background: #287acc8e;
-    color: #fff;
-    transform: translateX(6px);
-}
-
-.hide-on-small-only .side-nav a.active {
-    background: rgba(108, 160, 220, 0.16);
-    color: #fff;
-    box-shadow: inset 0 0 0 2px rgba(108, 160, 220, 0.02);
-}
 /* hover + active styling with background highlight */
 .nav a:hover {
-    background: #287acc8e;
+    background: rgba(108, 160, 220, 0.12);
     color: #fff;
     transform: translateX(6px);
 }
@@ -156,7 +107,6 @@ body {
     color: #fff;
     box-shadow: inset 0 0 0 2px rgba(108, 160, 220, 0.02);
 }
-
 
 /* social compact */
 .social-compact {
@@ -376,36 +326,5 @@ body {
 
     #hero-title {
         font-size: 1.5rem;
-    }
-}
-
-
-
-/* Print styles */
-@media print {
-    body, .main-content, .site-wrap {
-        background: #fff !important;
-        color: #000 !important;
-        box-shadow: none !important;
-    }
-    .sidebar,
-    .site-footer,
-    .hero-actions,
-    .social-compact {
-        display: none !important;
-    }
-    .main-content {
-        margin: 0 !important;
-        padding: 0 !important;
-        max-width: 100% !important;
-    }
-    .card, .section, .projects-grid, .project img {
-        box-shadow: none !important;
-        background: #fff !important;
-        border-radius: 0 !important;
-    }
-    a {
-        color: #000 !important;
-        text-decoration: underline !important;
     }
 }
