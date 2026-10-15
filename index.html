@@ -1,141 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Asfaw Gedamu – Enterprise Tech Learning Strategist & ML Practitioner</title>
-  <meta name="description" content="Portfolio of Asfaw Gedamu, Enterprise Tech Learning Strategist and ML Practitioner specializing in Data Engineering, Natural Language Processing, and FastAPI.">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Asfaw Gedamu – Portfolio">
-  <meta property="og:description" content="Portfolio of Asfaw Gedamu, Enterprise Tech Learning Strategist, specializing in Data Engineering, Machine Learning, and API Architecture.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/profile.jpg">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asfaw Gedamu | Portfolio & Technical Showcase</title>
+  <meta name="description" content="Portfolio of Asfaw Gedamu - Enterprise Tech Learning Strategist, Systems Expert, and Machine Learning Practitioner.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    code, pre { font-family: 'JetBrains Mono', monospace; }
+  </style>
 </head>
-<body>
-  <div class="site-wrap">
-     <aside class="sidebar" aria-label="Main Navigation">
-      <div class="profile">
-        <img src="images/profile.jpg" alt="Asfaw Gedamu" loading="lazy">
-        <div class="profile-underline"></div>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <!-- Navigation -->
+  <nav class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50 px-6 py-4 flex justify-between items-center max-w-6xl mx-auto">
+    <div class="font-bold text-xl tracking-tight text-cyan-400">Asfaw Gedamu</div>
+    <div class="flex gap-6 text-sm font-medium text-slate-300">
+      <a href="#about" class="hover:text-cyan-400 transition">About</a>
+      <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+      <a href="#research" class="hover:text-cyan-400 transition">Research</a>
+      <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+      <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="about" class="max-w-4xl mx-auto px-6 py-20 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950/80 text-cyan-300 border border-cyan-800/60 mb-6">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open for High-Impact Roles & Research Collaborations
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-white via-slate-200 to-cyan-400 bg-clip-text text-transparent">
+      Enterprise Tech Strategist & ML Practitioner
+    </h1>
+    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+      Transforming enterprise systems, pioneering low-resource NLP research (92.98% Tigrinya benchmark), and scaling developer capabilities through architecture-driven labs.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://github.com/asfawgedamu" target="_blank" class="px-6 py-3 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold transition flex items-center gap-2">
+        <i class="fab fa-github"></i> GitHub Profile
+      </a>
+      <a href="https://linkedin.com/in/asfawgedamu" target="_blank" class="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-semibold transition border border-slate-700 flex items-center gap-2">
+        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+      </a>
+    </div>
+  </header>
+
+  <!-- Flagship Projects -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold tracking-tight mb-2 text-white">Flagship Projects</h2>
+    <p class="text-slate-400 mb-10 text-sm">Engineered for real-world impact, enterprise scalability, and academic rigor.</p>
+         
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Project 1 -->
+      <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition">
+        <div class="flex justify-between items-start mb-4">
+          <span class="text-xs font-mono uppercase tracking-wider text-cyan-400 bg-cyan-950/60 px-2.5 py-1 rounded border border-cyan-900">Backend Architecture</span>
+          <span class="text-xs font-semibold text-emerald-400">3-Tier Clean Arch</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">FastAPI Enterprise API Series</h3>
+        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+          Progressive lab series evolving from prototype to layered production architecture with SQLAlchemy, Pydantic v2, JWT authentication, and Pytest coverage.
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-6">
+          <span class="px-2 py-0.5 text-xs rounded bg-slate-800 text-slate-300">FastAPI</span>
+          <span class="px-2 py-0.5 text-xs rounded bg-slate-800 text-slate-300">Python 3.11</span>
+          <span class="px-2 py-0.5 text-xs rounded bg-slate-800 text-slate-300">SQLAlchemy</span>
+          <span class="px-2 py-0.5 text-xs rounded bg-slate-800 text-slate-300">Pytest</span>
+        </div>
+        <a href="https://github.com/asfawgedamu/api-design-fundamentals" target="_blank" class="text-sm font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1">
+          Explore Repository <i class="fas fa-arrow-right text-xs"></i>
+        </a>
       </div>
 
-      <nav class="nav" aria-label="Sidebar links">
-        <ul>
-          <li><a href="#about"><i class="fa-solid fa-user"></i><span>About</span></a></li>
-          <li><a href="#experience"><i class="fa-solid fa-briefcase"></i><span>Experience</span></a></li>
-          <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a></li>
-          <li><a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a></li>
-          <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i><span>Education</span></a></li>
-          <li><a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
-          <li><a href="https://github.com/asfawgedamu/asfawgedamu.github.io/blob/main/resume/Asfaw_Gedamu_Resume.pdf" download><i class="fa-solid fa-file-pdf"></i><span>Resume</span></a></li>
-        </ul>
-      </nav>
-    </aside>
-
-    <main class="main-content">
-      <header id="hero" class="hero section">
-        <div class="hero-inner">
-          <h1 id="hero-title" aria-live="polite">Asfaw Gedamu</h1>
-          <p class="sub">Enterprise Tech Learning Strategist, Data Engineer & ML Practitioner bridging data, AI, and education.</p>
-          <div class="hero-actions">
-            <a class="hero-icon" href="https://linkedin.com/in/asfawgedamu" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a class="hero-icon" href="https://github.com/asfawgedamu" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a class="btn btn-primary" href="#contact">Get in Touch</a>
-            <a class="btn btn-outline" href="#projects">Explore Projects</a>
-          </div>
+      <!-- Project 2 -->
+      <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition">
+        <div class="flex justify-between items-start mb-4">
+          <span class="text-xs font-mono uppercase tracking-wider text-indigo-400 bg-indigo-950/60 px-2.5 py-1 rounded border border-indigo-900">NLP & Deep Learning</span>
+          <span class="text-xs font-semibold text-emerald-400">92.98% Accuracy</span>
         </div>
-      </header>
-
-      <section id="about" class="section card">
-        <h2><i class="fa-solid fa-user-pen"></i> About Me</h2>
-        <p>I am an Enterprise Tech Learning Strategist and Information Systems Program Expert at Ethio Telecom, leading corporate technical training initiatives. With a strong foundation in Natural Language Processing, Machine Learning, and data systems, I specialize in building scalable backend architectures and turning complex engineering concepts into structured, production-ready educational frameworks.</p>
-      </section>
-
-      <section id="experience" class="section card">
-        <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
-        <div class="timeline">
-          <div class="item">
-            <h3>Ethio Telecom — Telecom Excellence Academy (TExA)</h3>
-            <p><strong>Enterprise Tech Learning Strategist & Information Systems Program Expert</strong></p>
-            <p style="font-size: 0.9rem; color: #666; margin-top: 4px;">Leading corporate technical training initiatives, co-designing developer workshops (such as API Design Fundamentals), and driving talent capability growth.</p>
-          </div>
-          <div class="item">
-            <h3>Lesan AI</h3>
-            <p><strong>Part-time Social Media & Localization Lead</strong></p>
-            <p style="font-size: 0.9rem; color: #666; margin-top: 4px;">Guiding localization strategies and community engagement for multilingual AI solutions tailored to low-resource African languages.</p>
-          </div>
+        <h3 class="text-xl font-bold text-white mb-2">Tigrinya Dialect Identification</h3>
+        <p class="text-slate-400 text-sm mb-4 leading-relaxed">
+          First systematic dataset and character-level CNN / BiLSTM benchmark for 3 regional Tigrinya text varieties (L, Z, D). Peer-reviewed and published in DBLP/Springer.
+        </p>
+        <div class="flex flex-wrap gap-1.5 mb-6">
+          <span class="px-2 py-0.5 text-xs rounded bg-slate-800 text-slate-300">PyTorch</span>
+          <span class="px-2 py-0.5 text-xs rounded bg-slate-800 text-slate-300">Character CNN</span>
+          <span class="px-2 py-0.5 text-xs rounded bg-slate-800 text-slate-300">Low-Resource NLP</span>
         </div>
-      </section>
+        <a href="https://github.com/asfawgedamu/Tigrinya-Dialect-Identification" target="_blank" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-1">
+          Explore Repository <i class="fas fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <section id="projects" class="section card reveal">
-        <h2><i class="fa-solid fa-diagram-project"></i> Featured Projects</h2>
-        <div class="projects-grid">
-          <article class="project">
-            <h3>API Design Fundamentals</h3>
-            <p>A progressive, 3-level FastAPI lab series (Basic, Intermediate with SQLite/SQLAlchemy, and Enterprise Modular Architecture) complete with automated tests and security standards.</p>
-            <p><a href="https://github.com/asfawgedamu/api-design-fundamentals" target="_blank"><i class="fa-brands fa-github"></i> View Repository</a></p>
-          </article>
-          <article class="project">
-            <h3>Tigrinya Dialect Identification</h3>
-            <p>Machine learning project focused on classifying Tigrinya dialects (L, Z, D) using character-level CNN transformers, achieving ~92.98% accuracy.</p>
-            <p><a href="https://github.com/asfawgedamu/Tigrinya-Dialect-Identification" target="_blank"><i class="fa-brands fa-github"></i> View Repository</a></p>
-          </article>
-          <article class="project">
-            <h3>Database Systems & SQL Sandbox</h3>
-            <p>Curated collection of SQL scripts, performance optimization guides, and normalization frameworks spanning Oracle, MySQL, and PostgreSQL.</p>
-            <p><a href="https://github.com/asfawgedamu/database" target="_blank"><i class="fa-brands fa-github"></i> View Repository</a></p>
-          </article>
-        </div>
-      </section>
-
-      <section id="skills" class="section card">
-        <h2><i class="fa-solid fa-code"></i> Technical Skills</h2>
-        <div class="skill" data-value="95"><span>Python & FastAPI</span><div class="bar"><div class="fill"></div></div></div>
-        <div class="skill" data-value="90"><span>SQL & Database Administration (MySQL/PostgreSQL/Oracle)</span><div class="bar"><div class="fill"></div></div></div>
-        <div class="skill" data-value="85"><span>Machine Learning & NLP (Low-Resource Languages)</span><div class="bar"><div class="fill"></div></div></div>
-        <div class="skill" data-value="85"><span>Linux System Administration (RHEL / Ubuntu) & Docker</span><div class="bar"><div class="fill"></div></div></div>
-        <div class="skill" data-value="90"><span>Enterprise Curriculum & Technical Training Design</span><div class="bar"><div class="fill"></div></div></div>
-      </section>
-
-      <section id="education" class="section card">
-        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
-        <div class="timeline">
-          <div class="item">
-            <h3>Addis Ababa University</h3>
-            <p><strong>MSc in Information Science</strong> — Specialization in Natural Language Processing & Machine Learning</p>
-          </div>
-          <div class="item">
-            <h3>Mekelle University</h3>
-            <p><strong>BSc in Computer Science</strong></p>
-          </div>
-          <div class="item">
-            <h3>Addis Ababa University</h3>
-            <p><strong>BA in Journalism & Communication</strong></p>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section card">
-        <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
-        <p>Interested in collaborating on AI, API design, or tech education initiatives? Reach out below:</p>
-        <ul class="contact-list">
-          <li><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="https://api.whatsapp.com/send?phone=251911510063" target="_blank">Let’s Chat</a></li>
-          <li><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:asfawg@gmail.com?subject=Inquiry%20from%20Portfolio">Send me a message</a></li>
-          <li><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/asfawgedamu" target="_blank">github.com/asfawgedamu</a></li>
-          <li><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/asfawgedamu" target="_blank">linkedin.com/in/asfawgedamu</a></li>
-        </ul>
-      </section>
-
-      <main class="site-footer">
-        <p>© 2026 Asfaw Gedamu. Built with FastAPI principles and passion for learning.</p>
-      </main>
-    </main>
-  </div>
-
-  <script src="js/script.js"></script>
+  <!-- Footer -->
+  <footer id="contact" class="border-t border-slate-800 py-12 text-center text-slate-500 text-sm">
+    <p class="mb-4">Designed for Asfaw Gedamu • Hosted on GitHub Pages</p>
+    <div class="flex justify-center gap-6 text-slate-400">
+      <a href="https://github.com/asfawgedamu" class="hover:text-white"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/asfawgedamu" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:asfawg@gmail.com" class="hover:text-white"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
 </body>
 </html>
