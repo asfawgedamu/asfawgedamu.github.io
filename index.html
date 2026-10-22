@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asfaw Gedamu: ML for Tigrinya, backend engineering, technical training</title>
+  <meta name="description" content="Asfaw Gedamu builds machine learning for Tigrinya and trains engineers in AI, ML, cybersecurity and backend development at Ethio Telecom. Research, projects and live GitHub repositories.">
+  <link rel="canonical" href="https://asfawgedamu.github.io/">
+  <meta name="theme-color" content="#ECEFEA">
+  <meta name="author" content="Asfaw Gedamu">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Asfaw Gedamu">
+  <meta property="og:title" content="Asfaw Gedamu: ML for Tigrinya, backend engineering, technical training">
+  <meta property="og:description" content="Research on Tigrinya dialect identification (92.98% accuracy), a progressive FastAPI lab series, and 18+ years at Ethio Telecom.">
+  <meta property="og:url" content="https://asfawgedamu.github.io/">
+  <meta property="og:image" content="https://asfawgedamu.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://asfawgedamu.github.io/assets/img/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Serif+Ethiopic:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        d.dataset.theme = t;
+        var m = document.querySelector('meta[name="theme-color"]');
+        if (m && t === "dark") m.setAttribute("content", "#0F1D1F");
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Asfaw Gedamu",
+    "url": "https://asfawgedamu.github.io/",
+    "jobTitle": "Information Systems and Information Security Training Expert",
+    "worksFor": { "@type": "Organization", "name": "Ethio Telecom" },
+    "knowsAbout": ["Machine learning", "Natural language processing", "Low-resource languages", "Tigrinya", "FastAPI", "Backend engineering", "Cybersecurity training", "Curriculum design"],
+    "sameAs": [
+      "https://github.com/asfawgedamu",
+      "https://www.linkedin.com/in/asfawgedamu",
+      "https://x.com/asfawgedamu"
+    ]
+  }
+  </script>
+</head>
+
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-nav" id="siteNav">
+    <div class="wrap site-nav__in">
+      <a class="brand" href="#top">Asfaw Gedamu</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#code">Code</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-tools">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Use dark theme" aria-pressed="false">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.5-.05-1-.14-1.47A5.5 5.5 0 0 1 13.47 3.14 9.2 9.2 0 0 0 12 3Z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1>I build ML for <span lang="ti" class="geez">ትግርኛ</span> and train engineers to ship solid backends.</h1>
+          <p class="hero__lead">
+            I wrote the first annotated Tigrinya dialect-identification benchmark, and our best model reaches 92.98% accuracy.
+            After 18+ years at Ethio Telecom, I now train engineers there in AI, ML, cybersecurity and FinTech. More than 500 so far.
+          </p>
+          <p class="open-to"><span class="open-to__dot" aria-hidden="true"></span>Open to research collaboration and senior ML or backend roles.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#work">See the work</a>
+            <a class="btn btn--quiet" href="https://openreview.net/forum?id=kiG8qiUFm2u" rel="noopener">Read the paper</a>
+            <a class="btn btn--quiet" href="https://www.linkedin.com/in/asfawgedamu" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <figure class="fidel-wrap">
+          <div class="fidel" id="fidel" tabindex="0" role="group" aria-label="Chart of the Ge'ez script. Rows are consonants, columns are vowels. Use the arrow keys to move between letters.">
+            <span class="fidel__corner" aria-hidden="true"></span>
+            <span class="fidel__lab" aria-hidden="true">ä</span>
+            <span class="fidel__lab" aria-hidden="true">u</span>
+            <span class="fidel__lab" aria-hidden="true">i</span>
+            <span class="fidel__lab" aria-hidden="true">a</span>
+            <span class="fidel__lab" aria-hidden="true">e</span>
+            <span class="fidel__lab" aria-hidden="true">ə</span>
+            <span class="fidel__lab" aria-hidden="true">o</span>
+
+            <span class="fidel__lab fidel__lab--row" aria-hidden="true">h</span>
+            <span class="g" lang="gez" data-s="hä">ሀ</span><span class="g" lang="gez" data-s="hu">ሁ</span><span class="g" lang="gez" data-s="hi">ሂ</span><span class="g" lang="gez" data-s="ha">ሃ</span><span class="g" lang="gez" data-s="he">ሄ</span><span class="g" lang="gez" data-s="hə">ህ</span><span class="g" lang="gez" data-s="ho">ሆ</span>
+
+            <span class="fidel__lab fidel__lab--row" aria-hidden="true">l</span>
+            <span class="g" lang="gez" data-s="lä">ለ</span><span class="g" lang="gez" data-s="lu">ሉ</span><span class="g" lang="gez" data-s="li">ሊ</span><span class="g" lang="gez" data-s="la">ላ</span><span class="g" lang="gez" data-s="le">ሌ</span><span class="g" lang="gez" data-s="lə">ል</span><span class="g" lang="gez" data-s="lo">ሎ</span>
+
+            <span class="fidel__lab fidel__lab--row" aria-hidden="true">m</span>
+            <span class="g" lang="gez" data-s="mä">መ</span><span class="g" lang="gez" data-s="mu">ሙ</span><span class="g" lang="gez" data-s="mi">ሚ</span><span class="g" lang="gez" data-s="ma">ማ</span><span class="g" lang="gez" data-s="me">ሜ</span><span class="g" lang="gez" data-s="mə">ም</span><span class="g" lang="gez" data-s="mo">ሞ</span>
+
+            <span class="fidel__lab fidel__lab--row" aria-hidden="true">s</span>
+            <span class="g" lang="gez" data-s="sä">ሰ</span><span class="g" lang="gez" data-s="su">ሱ</span><span class="g" lang="gez" data-s="si">ሲ</span><span class="g" lang="gez" data-s="sa">ሳ</span><span class="g" lang="gez" data-s="se">ሴ</span><span class="g" lang="gez" data-s="sə">ስ</span><span class="g" lang="gez" data-s="so">ሶ</span>
+          </div>
+          <figcaption class="fidel__cap">
+            <span class="fidel__out" id="fidelOut" aria-live="polite">Hover, tap or use the arrow keys.</span>
+            <span class="fidel__note">Fidel, the script Tigrinya is written in. Each row is a consonant and each column a vowel, so one character carries both.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work" aria-labelledby="work-h">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="work-h">Selected work</h2>
+          <p class="lede">Two projects I would show first, and one reference collection.</p>
+        </div>
+
+        <div class="work-list">
+          <article class="work-row">
+            <div class="work-row__meta">
+              <h3>Tigrinya Dialect Identification</h3>
+              <p class="tag">Research, NLP</p>
+              <p class="stack">Python, PyTorch, character-level CNN, Jupyter</p>
+            </div>
+            <div class="work-row__body">
+              <p>A dataset and benchmark for telling three Tigrinya varieties (L, Z and D) apart from text alone. Sentences were collected per dialect from books and social-media writers, then translated into the other dialects with native-speaker experts.</p>
+              <p class="outcome">A character-level CNN reaches 92.98% accuracy on Ge'ez-script text.</p>
+              <p class="links">
+                <a href="https://github.com/asfawgedamu/Tigrinya-Dialect-Identification" rel="noopener">Code and data</a>
+                <a href="https://openreview.net/pdf?id=kiG8qiUFm2u" rel="noopener">Paper (PDF)</a>
+                <a href="#research">Dataset details</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="work-row" id="api-series">
+            <div class="work-row__meta">
+              <h3>API Design Fundamentals</h3>
+              <p class="tag">Backend, teaching</p>
+              <p class="stack">Python 3.11, FastAPI, SQLAlchemy, Pydantic v2, JWT, Pytest</p>
+            </div>
+            <div class="work-row__body">
+              <p>A progressive FastAPI lab series that moves developers from calling APIs to designing them. It uses a restaurant analogy: the customer is the client, the waiter is the endpoint, the kitchen is the service layer and the warehouse is the database.</p>
+              <p class="outcome">Three standalone apps. The last one adds layered architecture, API-key and JWT security, structured logging and a Pytest suite.</p>
+              <p class="links">
+                <a href="https://github.com/asfawgedamu/api-design-fundamentals" rel="noopener">Code</a>
+                <a href="#api">How the three levels differ</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="work-row">
+            <div class="work-row__meta">
+              <h3>Database systems reference</h3>
+              <p class="tag">Data, reference</p>
+              <p class="stack">SQL, SQL Server, DBA monitoring</p>
+            </div>
+            <div class="work-row__body">
+              <p>A curated set of working material for database administrators: a guide to 15 monitoring SQL scripts and SQL Server resources.</p>
+              <p class="links">
+                <a href="https://github.com/asfawgedamu/database" rel="noopener">Repository</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- API levels -->
+    <section class="section section--tint" id="api" aria-labelledby="api-h">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="api-h">How the API series builds up</h2>
+          <p class="lede">Each level is a complete app with its own README, and each adds one idea about how a backend should be organised.</p>
+        </div>
+
+        <div class="levels" id="levels">
+          <div class="tabs" role="tablist" aria-label="API series levels">
+            <button class="tab" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true" type="button">Level 1, Basic</button>
+            <button class="tab" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1" type="button">Level 2, Intermediate</button>
+            <button class="tab" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1" type="button">Level 3, Enterprise</button>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+            <div class="panel__text">
+              <h3>Fundamentals, in one file</h3>
+              <p>Directory <code>/basic</code>, runs on port 8000. Data lives in memory, so the focus stays on how requests and responses work.</p>
+              <ul>
+                <li>FastAPI basics and HTTP methods</li>
+                <li>JSON payloads and the generated OpenAPI and Swagger UI</li>
+                <li>A single-file app, <code>app_basic.py</code></li>
+              </ul>
+            </div>
+            <svg class="diagram" viewBox="0 0 730 200" role="img" aria-labelledby="d1-t">
+              <title id="d1-t">Level 1 architecture: a client calls a single FastAPI file that keeps data in memory.</title>
+              <defs><marker id="arr1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="d-head"/></marker></defs>
+              <rect class="d-box" x="10" y="72" width="170" height="60" rx="6"/><text class="d-t1" x="95" y="98" text-anchor="middle">Client</text><text class="d-t2" x="95" y="118" text-anchor="middle">Browser or Swagger UI</text>
+              <rect class="d-box" x="280" y="72" width="170" height="60" rx="6"/><text class="d-t1" x="365" y="98" text-anchor="middle">FastAPI app</text><text class="d-t2" x="365" y="118" text-anchor="middle">app_basic.py</text>
+              <rect class="d-box" x="550" y="72" width="170" height="60" rx="6"/><text class="d-t1" x="635" y="98" text-anchor="middle">In-memory store</text><text class="d-t2" x="635" y="118" text-anchor="middle">lost on restart</text>
+              <path class="d-arrow" d="M182 102H276" marker-end="url(#arr1)"/><path class="d-arrow" d="M452 102H546" marker-end="url(#arr1)"/>
+            </svg>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+            <div class="panel__text">
+              <h3>Persistence and validation</h3>
+              <p>Directory <code>/intermediate</code>, runs on port 8001. Data moves into SQLite, and every request is validated before it touches the database.</p>
+              <ul>
+                <li>Full CRUD: POST, GET, PUT and DELETE</li>
+                <li>SQLAlchemy ORM with Pydantic validation</li>
+                <li>Versioned routes under <code>/api/v1/</code>, CORS and pagination</li>
+              </ul>
+            </div>
+            <svg class="diagram" viewBox="0 0 730 200" role="img" aria-labelledby="d2-t">
+              <title id="d2-t">Level 2 architecture: client to a versioned API, through SQLAlchemy and Pydantic, into SQLite.</title>
+              <defs><marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="d-head"/></marker></defs>
+              <rect class="d-box" x="5" y="72" width="150" height="60" rx="6"/><text class="d-t1" x="80" y="98" text-anchor="middle">Client</text><text class="d-t2" x="80" y="118" text-anchor="middle">any HTTP caller</text>
+              <rect class="d-box" x="195" y="72" width="150" height="60" rx="6"/><text class="d-t1" x="270" y="98" text-anchor="middle">API</text><text class="d-t2" x="270" y="118" text-anchor="middle">/api/v1, CORS</text>
+              <rect class="d-box" x="385" y="72" width="150" height="60" rx="6"/><text class="d-t1" x="460" y="98" text-anchor="middle">Validation and ORM</text><text class="d-t2" x="460" y="118" text-anchor="middle">Pydantic, SQLAlchemy</text>
+              <rect class="d-box" x="575" y="72" width="150" height="60" rx="6"/><text class="d-t1" x="650" y="98" text-anchor="middle">SQLite</text><text class="d-t2" x="650" y="118" text-anchor="middle">persistent storage</text>
+              <path class="d-arrow" d="M157 102H191" marker-end="url(#arr2)"/><path class="d-arrow" d="M347 102H381" marker-end="url(#arr2)"/><path class="d-arrow" d="M537 102H571" marker-end="url(#arr2)"/>
+            </svg>
+          </div>
+
+          <div class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+            <div class="panel__text">
+              <h3>Layers, security and tests</h3>
+              <p>Directory <code>/advanced</code>, runs on port 8002. Routes stay thin, services hold the rules, and the database sits behind them.</p>
+              <ul>
+                <li>Layered modular layout: <code>app/routes</code> and <code>app/services</code></li>
+                <li>API keys and JWT authentication</li>
+                <li>Structured logging, performance middleware and Pytest with HTTPX</li>
+              </ul>
+            </div>
+            <svg class="diagram" viewBox="0 0 730 200" role="img" aria-labelledby="d3-t">
+              <title id="d3-t">Level 3 architecture: client, routes, services and database in a row, with authentication, logging and tests around them.</title>
+              <defs><marker id="arr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="d-head"/></marker></defs>
+              <rect class="d-box" x="5" y="22" width="150" height="60" rx="6"/><text class="d-t1" x="80" y="48" text-anchor="middle">Client</text><text class="d-t2" x="80" y="68" text-anchor="middle">key or JWT</text>
+              <rect class="d-box" x="195" y="22" width="150" height="60" rx="6"/><text class="d-t1" x="270" y="48" text-anchor="middle">Routes</text><text class="d-t2" x="270" y="68" text-anchor="middle">app/routes</text>
+              <rect class="d-box" x="385" y="22" width="150" height="60" rx="6"/><text class="d-t1" x="460" y="48" text-anchor="middle">Services</text><text class="d-t2" x="460" y="68" text-anchor="middle">app/services</text>
+              <rect class="d-box" x="575" y="22" width="150" height="60" rx="6"/><text class="d-t1" x="650" y="48" text-anchor="middle">Database</text><text class="d-t2" x="650" y="68" text-anchor="middle">SQLAlchemy, SQLite</text>
+              <path class="d-arrow" d="M157 52H191" marker-end="url(#arr3)"/><path class="d-arrow" d="M347 52H381" marker-end="url(#arr3)"/><path class="d-arrow" d="M537 52H571" marker-end="url(#arr3)"/>
+              <rect class="d-band" x="195" y="112" width="530" height="68" rx="6"/>
+              <text class="d-t1" x="210" y="138">Across every request</text>
+              <text class="d-t2" x="210" y="160">API-key and JWT security, structured logging, timing middleware</text>
+              <rect class="d-band" x="5" y="112" width="150" height="68" rx="6"/>
+              <text class="d-t1" x="20" y="138">Tests</text>
+              <text class="d-t2" x="20" y="160">Pytest and HTTPX</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section" id="research" aria-labelledby="research-h">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="research-h">Research</h2>
+          <p class="lede">Language technology for Tigrinya starts with data, and for dialects that data barely existed.</p>
+        </div>
+
+        <div class="research">
+          <div class="paper">
+            <h3><a href="https://openreview.net/forum?id=kiG8qiUFm2u" rel="noopener">Tigrinya Dialect Identification</a></h3>
+            <p class="authors">Asfaw Gedamu Haileslasie, Asmelash Teka Hadgu and Solomon Teferra Abate</p>
+            <p>The paper proposes a shared taxonomy of three Tigrinya varieties (Z, L and D), builds the first annotated benchmark dataset for classifying them from text, and compares classical machine learning with deep learning. Character-level convolutional networks perform best, reaching 92.98% on native Ge'ez-script text.</p>
+            <p class="links">
+              <a href="https://openreview.net/pdf?id=kiG8qiUFm2u" rel="noopener">Read the PDF</a>
+              <a href="https://openreview.net/forum?id=kiG8qiUFm2u" rel="noopener">OpenReview page</a>
+              <a href="https://github.com/asfawgedamu/Tigrinya-Dialect-Identification" rel="noopener">Dataset and code</a>
+            </p>
+
+            <div class="cite">
+              <div class="cite__bar">
+                <span class="cite__title" id="citeTitle">BibTeX</span>
+                <button class="btn btn--small" id="copyBib" type="button">Copy citation</button>
+              </div>
+              <!-- EDIT: add year and venue here once you want them in the citation. -->
+<pre class="bibtex" id="bibtex" aria-labelledby="citeTitle">@misc{haileslasie_tigrinya_dialect_identification,
+  title        = {Tigrinya Dialect Identification},
+  author       = {Haileslasie, Asfaw Gedamu and Hadgu, Asmelash Teka and Abate, Solomon Teferra},
+  howpublished = {OpenReview},
+  url          = {https://openreview.net/forum?id=kiG8qiUFm2u}
+}</pre>
+            </div>
+          </div>
+
+          <div class="dataset">
+            <h3>What is in the dataset</h3>
+            <p class="dataset__sub">2,964 sentences across three dialects.</p>
+
+            <ul class="bars" aria-label="Sentences per dialect">
+              <li style="--w:89%"><span class="bars__k">Z</span><span class="bars__track"><i></i></span><span class="bars__v">1,041</span></li>
+              <li style="--w:100%"><span class="bars__k">L</span><span class="bars__track"><i></i></span><span class="bars__v">1,169</span></li>
+              <li style="--w:64.5%"><span class="bars__k">D</span><span class="bars__track"><i></i></span><span class="bars__v">754</span></li>
+            </ul>
+
+            <table class="src">
+              <caption class="sr-only">Sources by dialect</caption>
+              <thead><tr><th scope="col">Dialect</th><th scope="col">Source</th><th scope="col" class="num">Sentences</th></tr></thead>
+              <tbody>
+                <tr><td>Z</td><td>Book: Kilte Zantatat</td><td class="num">1,041</td></tr>
+                <tr><td>L</td><td>Book: Fato</td><td class="num">764</td></tr>
+                <tr><td>L</td><td>Book: Erqi Enderta</td><td class="num">405</td></tr>
+                <tr><td>D</td><td>Two social-media writers</td><td class="num">754</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--tint" id="experience" aria-labelledby="exp-h">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="exp-h">Experience</h2>
+          <p class="lede">I move between building systems and teaching people to build them.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <p class="when">2021 to present</p>
+            <div>
+              <h3>Information Systems and Information Security training expert</h3>
+              <p class="org">Ethio Telecom, Tech Horizon Center of Excellence (formerly TExA)</p>
+              <ul>
+                <li>Upskilled 500+ professionals in AI, ML, cybersecurity and FinTech.</li>
+                <li>Design hands-on lab frameworks for engineering teams. The API series above is built in that format.</li>
+                <li>Developing a full-stack software development curriculum.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="when">Before 2021</p>
+            <div>
+              <h3>Technical practice</h3>
+              <p class="org">Ethio Telecom</p>
+              <ul>
+                <li>18+ years with the company in total, which is where the move into technical education started.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="when">Education</p>
+            <div>
+              <h3>MSc Information Science, BSc Computer Science</h3>
+            </div>
+          </li>
+        </ol>
+
+        <p class="cv-link"><a href="cv.html">Open a printable CV</a>, which saves cleanly as a PDF from your browser's print dialog.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="skills-h">Skills, and where to see them</h2>
+          <p class="lede">Each row links to the code or role that backs it up.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill">
+            <h3>Machine learning and NLP</h3>
+            <p>Python, PyTorch, Pandas, NumPy. Character-level CNNs, dataset construction, low-resource languages.</p>
+            <p class="proof"><a href="https://github.com/asfawgedamu/Tigrinya-Dialect-Identification" rel="noopener">Tigrinya Dialect Identification</a></p>
+          </div>
+          <div class="skill">
+            <h3>Backend and APIs</h3>
+            <p>FastAPI, SQLAlchemy, Pydantic v2, JWT and API keys, API versioning, CORS, pagination, Pytest with HTTPX.</p>
+            <p class="proof"><a href="https://github.com/asfawgedamu/api-design-fundamentals" rel="noopener">API Design Fundamentals</a></p>
+          </div>
+          <div class="skill">
+            <h3>Databases</h3>
+            <p>SQL across SQL Server, Oracle, MySQL, PostgreSQL and SQLite, including DBA monitoring.</p>
+            <p class="proof"><a href="https://github.com/asfawgedamu/database" rel="noopener">Database systems reference</a></p>
+          </div>
+          <div class="skill">
+            <h3>Security and systems</h3>
+            <p>Information security training, cybersecurity upskilling, Linux administration (RHEL and Ubuntu).</p>
+            <p class="proof"><a href="#experience">Training role at Ethio Telecom</a></p>
+          </div>
+          <div class="skill">
+            <h3>Teaching and enablement</h3>
+            <p>Curriculum design, hands-on lab facilitation, technical writing, enterprise capability building.</p>
+            <p class="proof"><a href="#experience">500+ professionals upskilled</a></p>
+          </div>
+          <div class="skill">
+            <h3>Everyday tools</h3>
+            <p>Git and GitHub, Docker, VS Code.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live repos -->
+    <section class="section section--tint" id="code" aria-labelledby="code-h">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="code-h">All repositories</h2>
+          <p class="lede">Pulled live from GitHub, so this list stays current without edits.</p>
+        </div>
+
+        <div class="repo-tools">
+          <label class="field">
+            <span>Search</span>
+            <input type="search" id="repoSearch" placeholder="Name, topic or description" autocomplete="off">
+          </label>
+          <label class="field">
+            <span>Language</span>
+            <select id="repoLang"><option value="">All languages</option></select>
+          </label>
+          <label class="check">
+            <input type="checkbox" id="repoForks">
+            <span>Include forks</span>
+          </label>
+        </div>
+
+        <p class="repo-status" id="repoStatus" role="status" aria-live="polite">Loading repositories from GitHub.</p>
+        <ul class="repo-list" id="repoList"></ul>
+        <noscript><p>The live list needs JavaScript. <a href="https://github.com/asfawgedamu?tab=repositories">Open the repositories on GitHub.</a></p></noscript>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-h">
+      <div class="wrap contact">
+        <div>
+          <h2 id="contact-h">Get in touch</h2>
+          <p class="lede">I am open to research collaboration on African-language technology, senior ML or backend roles, and partnerships on technical training. LinkedIn is the fastest way to reach me.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn--primary" href="https://www.linkedin.com/in/asfawgedamu" rel="noopener">Message me on LinkedIn</a>
+          <a class="btn btn--quiet" id="emailBtn" href="#" hidden>Email me</a>
+          <a class="btn btn--quiet" href="https://github.com/asfawgedamu" rel="noopener">GitHub</a>
+          <a class="btn btn--quiet" href="https://x.com/asfawgedamu" rel="noopener">X</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <p>&copy; <span id="year">2026</span> Asfaw Gedamu</p>
+      <p>Plain HTML, CSS and JavaScript with no build step. <a href="https://github.com/asfawgedamu/asfawgedamu.github.io" rel="noopener">Source on GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
