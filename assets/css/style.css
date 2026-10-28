@@ -324,8 +324,15 @@ main { flex: 1 0 auto; }
 .form__row { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
 .form .field { color: var(--ink); font-weight: 500; }
 .form .field input, .form .field textarea {
-  width: 100%; min-width: 0; padding: .65rem .75rem; background: var(--paper); color: var(--ink);
+  width: 100%; min-width: 0; padding: .65rem .75rem; background: #ffffff; color: var(--ink);
   border: 1px solid var(--line-strong); border-radius: var(--radius); font-size: 1rem; font-weight: 400;
+}
+.form .field input:focus,
+.form .field textarea:focus {
+  background: #ffffff;
+  border-color: var(--verdigris);
+  outline: 2px solid var(--verdigris);
+  outline-offset: 2px;
 }
 .form .field textarea { resize: vertical; min-height: 9rem; }
 .form .field [aria-invalid="true"] { border-color: var(--accent); }
