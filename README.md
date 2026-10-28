@@ -1,35 +1,35 @@
 # Asfaw Gedamu | Technical Portfolio
 
-Welcome to my technical portfolio, showcasing my work in enterprise technology, back-end engineering, machine learning research, and developer capability development.
+My portfolio brings together selected work in backend development, machine learning research, enterprise technology, and technical capability development.
 
-**Explore:** [Portfolio Website](https://asfawgedamu.github.io/) · [GitHub Projects](https://github.com/asfawgedamu) · [LinkedIn](https://linkedin.com/in/asfawgedamu)
+[Portfolio Website](https://asfawgedamu.github.io/index.html) · [GitHub Projects](https://github.com/asfawgedamu) · [LinkedIn](https://linkedin.com/in/asfawgedamu)
 
 ## Structure
 
-Plain HTML, CSS and JavaScript. No build step.
+Built with HTML, CSS, and JavaScript. No build step required.
 
 | File | Page |
 | --- | --- |
-| `index.html` | Home: introduction and links to the other pages |
-| `work.html` | Selected work, with the research and API deep dives under their project cards |
-| `resume.html` | Experience, education and skills |
-| `code.html` | Live list of the other GitHub repositories |
-| `contact.html` | Contact form |
-| `cv.html` | Printable CV (save as PDF from the browser print dialog) |
+| `index.html` | Home: introduction and navigation |
+| `work.html` | Selected projects, research, and technical work |
+| `resume.html` | Professional experience, education, and skills |
+| `code.html` | GitHub repositories and selected projects |
+| `contact.html` | Contact form and contact information |
+| `cv.html` | Printable CV, suitable for saving as PDF |
 
-Shared files: `assets/css/style.css` (colors and type are tokens at the top) and `assets/js/main.js` (theme, menu, tabs, repository list).
+Shared files: `assets/css/style.css` (site-wide styles and design settings) and `assets/js/main.js` (theme, navigation, tabs, repository listings, and contact form behavior).
 
 ## Editing
 
-- The header and footer are repeated in each page. If you change the navigation, change it in all five pages.
-- `cv.html` repeats the experience, education and skills from `resume.html`. Update both when a fact changes (years, headcount, titles).
-- The contact form needs somewhere to send messages. A static site has no server, so by default **Submit opens the visitor's email app** with the message filled in. To send straight from the page, set `scriptEndpoint` (a Google Apps Script web app that emails you from your own Gmail, no branding) or `formEndpoint` (a Formspree form URL) at the top of `assets/js/main.js`. `scriptEndpoint` wins if both are set.
-- The three contact badges appear in the hero on the home page, under the header on every other page, and in every footer.
-- To change which repositories appear on the Code page, edit `hideRepos` and `featuredRepos` at the top of `assets/js/main.js`.
+- The header, navigation, and footer are maintained across the individual HTML pages. Update the relevant pages when changing shared links or content.
+- Keep `resume.html` and `cv.html` consistent when updating professional experience, education, skills, or other CV details.
+- The contact form opens the visitor's email application with the message prefilled by default. To process submissions through a web service, configure `scriptEndpoint` for a Google Apps Script web app or `formEndpoint` for a Formspree form in `assets/js/main.js`. If both are configured, `scriptEndpoint` takes precedence.
+- Contact badges appear in the home page hero section, beneath the header on other pages, and in the footers.
+- To manage the repositories displayed on the Code page, update `hideRepos` and `featuredRepos` in `assets/js/main.js`.
 
 ## Deploying on GitHub Pages
 
-1. The repository must be named `asfawgedamu.github.io`.
-2. Copy these files into the repository root and push to `main`.
-3. In the repository, open Settings, then Pages, and set the source to "Deploy from a branch", branch `main`, folder `/ (root)`.
-4. The site is live at https://asfawgedamu.github.io/ within a minute or two. `.nojekyll` is included so the files are served as they are.
+1. Name the repository `asfawgedamu.github.io`.
+2. Place the website files in the repository root and push the changes to the `main` branch.
+3. In the repository, open **Settings → Pages**. Select **Deploy from a branch**, choose `main`, and set the folder to `/(root)`.
+4. Once deployment completes, the site is available at [https://asfawgedamu.github.io/index.html](https://asfawgedamu.github.io/index.html). The `.nojekyll` file allows GitHub Pages to serve the site without Jekyll processing.
