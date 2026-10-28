@@ -4,6 +4,12 @@ My portfolio brings together selected work in backend development, machine learn
 
 [Portfolio Website](https://asfawgedamu.github.io/index.html) · [GitHub Projects](https://github.com/asfawgedamu) · [LinkedIn](https://linkedin.com/in/asfawgedamu)
 
+#
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/asfawgedamu) [![Portfolio](https://img.shields.io/badge/Portfolio-90EE90?style=for-the-badge&logo=Google%20Chrome&logoColor=333333)](https://asfawgedamu.github.io) [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:asfawg@gmail.com?subject=Inquiry%20from%20GitHub%20Profile&body=Hi%20Asfaw,%0A%0AI%20visited%20your%20GitHub%20profile%20and%20would%20like%20to%20connect%20regarding...)
+
+#
+
 ## Structure
 
 Built with HTML, CSS, and JavaScript. No build step required.
