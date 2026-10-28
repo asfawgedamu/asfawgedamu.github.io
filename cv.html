@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asfaw Gedamu, CV</title>
+  <meta name="description" content="Printable CV for Asfaw Gedamu: ML practitioner, backend engineer and technical trainer at Ethio Telecom.">
+  <link rel="canonical" href="https://asfawgedamu.github.io/cv.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <style>
+    :root { --ink: #17262A; --muted: #516064; --rule: #C5CEC8; --accent: #B3261E; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: #fff; font: 400 11pt/1.5 "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 52rem; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; margin: 0; letter-spacing: -.01em; }
+    h1 { font-size: 2.1rem; line-height: 1.1; }
+    h2 { font-size: 1.15rem; margin-top: 2rem; padding-bottom: .3rem; border-bottom: 2px solid var(--ink); }
+    h3 { font-size: 1.02rem; }
+    p, ul { margin: .4rem 0 0; }
+    ul { padding-left: 1.15rem; }
+    li + li { margin-top: .25rem; }
+    a { color: var(--accent); }
+    .sub { color: var(--muted); margin-top: .35rem; }
+    .row { display: grid; grid-template-columns: 9.5rem 1fr; gap: 0 1.5rem; margin-top: 1rem; }
+    .when { color: var(--muted); font-weight: 500; }
+    .badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
+    .print-contact { display: none; }
+    .toolbar { display: flex; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.5rem; }
+    .toolbar a, .toolbar button { font: inherit; padding: .5rem .9rem; border: 1px solid var(--rule); border-radius: 6px; background: #fff; color: var(--ink); cursor: pointer; text-decoration: none; }
+    .toolbar button { background: var(--accent); border-color: var(--accent); color: #fff; }
+    @media (max-width: 600px) { .row { grid-template-columns: 1fr; } }
+    @media print {
+      .toolbar, .badges { display: none; }
+      .print-contact { display: block; }
+      main { padding: 0; max-width: none; }
+      a { color: var(--ink); text-decoration: none; }
+      h2 { break-after: avoid; }
+      .row { break-inside: avoid; }
+    }
+    @page { margin: 16mm; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="toolbar">
+      <a href="index.html">Back to the site</a>
+      <button type="button" onclick="window.print()">Save as PDF or print</button>
+    </div>
+
+    <h1>Asfaw Gedamu</h1>
+    <p class="sub">ML practitioner, backend engineer and enterprise technical trainer</p>
+    <div class="badges">
+      <a href="mailto:asfawg@gmail.com?subject=Inquiry%20from%20GitHub%20Profile"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+      <a href="https://github.com/asfawgedamu" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+      <a href="https://linkedin.com/in/asfawgedamu" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    </div>
+    <p class="sub print-contact">asfawg@gmail.com · github.com/asfawgedamu · linkedin.com/in/asfawgedamu</p>
+
+     
+    
+    <h2>Summary</h2>
+    <p>Author of the first annotated benchmark for Tigrinya dialect identification (92.98% accuracy with a character-level CNN). 19+ years at Ethio Telecom, now training engineers in AI, ML, cybersecurity and FinTech. More than 500 professionals so far.</p>
+
+    <h2>Experience</h2>
+    <div class="row">
+      <p class="when">2021 to present</p>
+      <div>
+        <h3>Information Systems and Information Security training expert</h3>
+        <p class="sub">Ethio Telecom, Tech Horizon Center of Excellence (formerly TExA)</p>
+        <ul>
+          <li>Upskilled 500+ professionals in AI, ML, cybersecurity and FinTech.</li>
+          <li>Design hands-on lab frameworks for engineering teams.</li>
+          <li>Developing a full-stack software development curriculum.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <p class="when">Before 2021</p>
+      <div>
+        <h3>Technical practice</h3>
+        <p class="sub">Ethio Telecom</p>
+        <ul><li>19+ years with the company in total.</li></ul>
+      </div>
+    </div>
+
+    <h2>Research</h2>
+    <div class="row">
+      <p class="when">OpenReview</p>
+      <div>
+        <h3>Tigrinya Dialect Identification</h3>
+        <p class="sub">Asfaw Gedamu Haileslasie, Asmelash Teka Hadgu, Solomon Teferra Abate</p>
+        <ul>
+          <li>Proposed a shared taxonomy of three Tigrinya varieties (Z, L, D) and built the first annotated benchmark dataset for classifying them from text (2,964 sentences).</li>
+          <li>Compared classical machine learning and deep learning; character-level CNNs reached 92.98% on Ge'ez-script text.</li>
+          <li><a href="https://openreview.net/forum?id=kiG8qiUFm2u">openreview.net/forum?id=kiG8qiUFm2u</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Selected projects</h2>
+    <div class="row">
+      <p class="when">Python, FastAPI</p>
+      <div>
+        <h3>API Design Fundamentals</h3>
+        <ul>
+          <li>Three-level FastAPI lab series: in-memory, SQLite with CRUD and validation, then a layered architecture with API-key and JWT security, structured logging and a Pytest suite.</li>
+          <li><a href="https://github.com/asfawgedamu/api-design-fundamentals">github.com/asfawgedamu/api-design-fundamentals</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <p class="when">SQL, DBA</p>
+      <div>
+        <h3>Database systems reference</h3>
+        <ul>
+          <li>Curated working material for database administrators: a guide to 15 monitoring SQL scripts and SQL Server resources.</li>
+          <li><a href="https://github.com/asfawgedamu/database">github.com/asfawgedamu/database</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>ML and NLP:</strong> Python, PyTorch, Pandas, NumPy, character-level CNNs, low-resource languages.</li>
+      <li><strong>Backend:</strong> FastAPI, SQLAlchemy, Pydantic v2, JWT, Pytest with HTTPX.</li>
+      <li><strong>Databases:</strong> SQL Server, Oracle, MySQL, PostgreSQL, SQLite.</li>
+      <li><strong>Systems and tools:</strong> Linux (RHEL, Ubuntu), Git, Docker.</li>
+      <li><strong>Teaching:</strong> curriculum design, lab facilitation, technical writing.</li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+      <li>MSc, Information Science</li>
+      <li>BSc, Computer Science</li>
+       <li>BA, Journalism and communications </li>
+    </ul>
+  </main>
+</body>
+</html>
